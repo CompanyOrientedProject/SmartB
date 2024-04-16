@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Blinds X</title>
+
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+
+        <ul class="menu" id="dropdownMenu">
+            <li><button href="#" onclick="loadPage('home'); toggleMenu();">Home</button></li>
+            <li><button href="#" onclick="loadPage('controller'); toggleMenu();">Controls</button></li>
+            <li><button href="#" onclick="loadPage('config'); toggleMenu();">Configuration</button></li>
+            <li><button href="#" onclick="loadPage('statistics'); toggleMenu();">Statistics</button></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        </header>
+
+        <div id="app">
+
+        </div>
+    </div>
+
+    <footer style="text-align: center;">2024 Smart Blind Controller | ®</footer>
+
+    <script src="scripts.js" defer></script>
+    <script src="./main.js" type="module"></script>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

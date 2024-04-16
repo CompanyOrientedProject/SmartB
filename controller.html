@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Blinds X</title>
+    <link rel="stylesheet" href="controller.css">
+</head>
+<body>
+
+    <div class="controller-container">
+        <div class="control-section">
+            <h2>Automatic Controls</h2>
+
+            <div class="control-button">
+                <button class="button-open" onclick="openSlider()">Open</button>
+
+                <button class="button-stop">Stop</button>
+                <button class="button-close" onclick="closeSlider()">Close</button>
+            </div>
+        </div>
+
+        <div class="control-section">
+            <h2>Blind Level</h2>
+                <div class="slider-container">
+                    <input type="range" id="blindLevelSlider" min="0" max="100" value="50" step="1">
+            </div>
+
+            <p id="blindLevelValue">50%</p>
+        </div>
+        
+        <div class="control-section">
+            <h2>Rotation Level</h2>
+            <div class="RotationLevelSlider">
+                <div onscroll="updateLabel(this, 'RotationLabel')" class="Scroll">
+                    <div class="Dark"></div>
+                    <div class="Light"></div>
+                </div>
+            </div>
+            <div id="RotationLabel" class="Label">50%</div>
+        
+        
+        
+        
+            
+        </div>
+    </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

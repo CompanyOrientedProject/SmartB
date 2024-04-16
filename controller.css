@@ -1,0 +1,103 @@
+.controller-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .control-button{
+    display: grid;
+
+  }
+
+  .button-open{
+    background-color: green;
+  }
+
+  .button-close{
+    background-color: green;
+  }
+  .button-stop{
+    background-color: red;
+  }
+
+  .control-button button{
+    margin-bottom: 2vh;
+  }
+
+  .control-section{
+    width: 300px;
+    justify-content: space-between;
+  }
+
+  #blindLevelSlider {
+    width: 200px; 
+    height: 100%; 
+    top: 0;
+    transform: rotate(270deg);
+}
+
+.slider-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px; 
+  height: 20px; 
+  background-color: #646cff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#blindLevelValue {
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.RotationLevelSlider{
+    position:relative;
+    width:100px;
+    height:300px;
+    margin:20px auto;
+    border-radius:36px;
+    overflow:hidden;
+  }
+
+.Scroll{
+   width:120px;
+    height:300px;
+    background-color:#353535;
+    margin:auto;
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.Dark{
+    width:100px;
+    height:300px;
+    background-color:black;
+  }
+
+.Light{
+    width:100px;
+    height:300px;
+    background-color:white;
+  }
+
+  @media all and (min-width:221px) and (max-width: 890px) {
+    .controller-container{
+      display: grid;
+      align-content: center;
+    }
+      .control-button{
+        display: grid;
+      }
+
+
+  }
