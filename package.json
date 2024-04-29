@@ -1,14 +1,14 @@
 {
-  "name": "smartb",
+  "name": "smartblinds",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "workspaces": [
+    "lumisync-web"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "web": "npm run dev -w=lumisync-web"
   },
-  "devDependencies": {
-    "vite": "^5.2.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sieluna/SmartBlinds.git"
   }
 }

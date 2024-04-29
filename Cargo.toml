@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    "lumisync-server",
+    "lumisync-mock"
+]
+exclude = []
+resolver = "2"
+
+[workspace.dependencies]
+config = "0.14"
+serde = "1"
+serde_json = "1"
+tokio = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[workspace.dependencies.server]
+package = "lumisync-server"
+path = "./lumisync-server"
